@@ -125,15 +125,8 @@ function RegisterEnv(env)
 	local UpdateAmmo = env.UpdateAmmoLabel
 	env.UpdateAmmoLabel = newcclosure(function(...)
 		for i, v in next, getupvalue(UpdateAmmo, 4) do
-			if GunStatTable[v[1]] and GunStatTable[v[1]].ClipAmmo then
-				if Settings.InfAmmo.Enabled then
-					v[2] = math.huge
-				elseif v[2] == math.huge then
-					v[2] = GunStatTable[v[1]].ClipAmmo
-				end
-				if Settings.RapidFire.Enabled then
-					v[5] = 0
-				end
+			if GunStatTable[v[1]] and Settings.RapidFire.Enabled then
+				v[5] = 0
 			end
 		end
 		return UpdateAmmo(...)
@@ -294,7 +287,7 @@ Settings.ESPRainbow = ESP.AddToggle("Rainbow", Esp.ToggleRainbow)
 
 Settings.ESPTextSize = ESP.AddSlider("Text Size", 10, 32, Esp.UpdateTextSize)
 
-Settings.ESPRange = ESP.AddSlider("Range", 0, 2048, function(val)
+Settings.ESPRange = ESP.AddSlider("Range", 0, 4096, function(val)
     Esp.Settings.Range = val
 end)
 
@@ -318,22 +311,6 @@ Settings.ShowItems = ESP.AddToggle("Show Dropped Items", function(toggle)
 	end
 end)
 
-Settings.ShowCrates = ESP.AddToggle("Show Supply Crates", function(toggle)
-	if toggle then
-		for i, v in next, workspace.Map:GetChildren() do
-			if v.Name == "Crate" then
-				Esp.AddItem("Supply Crate", v:WaitForChild("Main"), v.Main.Color)
-			end
-		end
-	else
-		for i, v in next, Esp.ItemContainer do
-			if i.Name == "Main" then
-				Esp.RemoveItem(i)
-			end
-		end
-	end
-end)
-
 local GunMods = Lib.AddTab("Gun Mods")
 
 GunMods.AddLabel("Gun Mods")
@@ -341,16 +318,6 @@ GunMods.AddLabel("Gun Mods")
 Settings.Wallbang = GunMods.AddToggle("Wallbang")
 
 Settings.RapidFire = GunMods.AddToggle("Rapid Fire")
-
-Settings.InfAmmo = GunMods.AddToggle("Infinite Ammo", function(toggle)
-	if toggle then
-		repeat Services.RunService.Heartbeat:Wait()
-			if Local.Char then
-				Network:FireServer("Animate", "Reload", 0, math.huge)
-			end
-		until Settings.InfAmmo.Enabled == false
-	end
-end)
 
 Settings.InfRange = GunMods.AddToggle("Infinite Range")
 
@@ -456,7 +423,7 @@ end)
 
 Settings.SilentAimMode.Set("Random")
 Settings.ESPTextSize.Set(16)
-Settings.ESPRange.Set(2048)
+Settings.ESPRange.Set(4096)
 Settings.TracerStart.Set("Bottom")
 Settings.TracerOffset.Set(25)
 Settings.KillMsg.Set("{user} isn't using Project Evo")
@@ -551,12 +518,6 @@ workspace.GroundWeapons.ChildAdded:Connect(function(child)
 		local Center = child:WaitForChild("Center")
 		repeat wait() until Center:FindFirstChildOfClass("ParticleEmitter")
 		Esp.AddItem(child.Name, Center, Rarities[Center:FindFirstChildOfClass("ParticleEmitter").Name])
-	end
-end)
-
-workspace.Map.ChildAdded:Connect(function(child)
-	if Settings.ShowCrates.Enabled and child.Name == "Crate" then
-		Esp.AddItem("Supply Crate", child:WaitForChild("Main"), child.Main.Color)
 	end
 end)
 
