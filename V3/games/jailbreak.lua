@@ -475,7 +475,7 @@ local function solvepuzzle()
 		end
 	end
 	local res = httprequest({
-		Url = "https://projectevo.xyz/api/v1/utils/solvenumberlink",
+		Url = "", -- Link redacted, the repl.co one from the previous 2 versions of Evo still works tho :)
 		Method = "POST",
 		Headers = {
 			["Content-Type"] = "application/json"
