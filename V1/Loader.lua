@@ -9,7 +9,7 @@ end
 
 Hint:Destroy()
 
-local Games = game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Games.json", true)
+local Games = game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Games.json", true)
 Games = game:GetService("HttpService"):JSONDecode(Games)
 
 local Functions = {
@@ -174,7 +174,7 @@ Gui.Main.Button.MouseButton1Click:Connect(function()
 		for i, v in next, CurrentGame.Functions do
 			getgenv()[i] = Functions[i]
 		end
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/" .. string.gsub(CurrentGame.Name, " ", "") .. ".lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/" .. string.gsub(CurrentGame.Name, " ", "") .. ".lua"))()
 	else
 		local Hint = Instance.new("Hint", game:GetService("CoreGui"))
 		Hint.Text = "Missing Functions: " .. table.concat(MissingFunctions, ", ")
