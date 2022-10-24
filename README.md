@@ -9,7 +9,7 @@ This was my first attempt at a 'proper' hub, it's written like shit cause I was 
 Give or take, 3 years old
 
 # V2
-Quality-wise, not much better than V1. A bunch more features tho, this was the hub in the series that took off with a significant amount of popularity
+Quality-wise, not much better than V1. A bunch more features tho, this was the first hub in the series that took off with a significant amount of popularity
 
 1 - 2 years old
 
