@@ -28,7 +28,7 @@ local Namecall = Meta.__namecall
 
 local ClientEnv = {}
 
-local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/EspModule.lua", true))()
+local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/EspModule.lua", true))()
 
 -- Functions
 
@@ -129,7 +129,7 @@ end
 
 -- GUI
 
-local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Library.lua", true))()
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Library.lua", true))()
 Lib.Init("Arsenal")
 
 local MainTab = Lib.AddTab("Main")
