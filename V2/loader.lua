@@ -85,7 +85,7 @@ local chosenGame = ({
 })[game.PlaceId]
 
 if chosenGame then
-    loadstring(game:HttpGetAsync("https://projectevo.xyz/script/games/" .. chosenGame))()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V2/games/" .. chosenGame))()
 else
 	game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "EvoV2",
