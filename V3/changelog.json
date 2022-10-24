@@ -1,0 +1,33 @@
+{
+    "version": "V3.2.16.0",
+    "games": {
+        "badbusiness": [3233893879],
+        "bloxburg": [185655149],
+        "jailbreak": [606849621],
+        "phantomforces": [292439477, 299659045],
+        "piggy": [4623386862],
+        "projectlazarus": [443406476],
+        "robeats": [698448212]
+    },
+    "systems": {
+        "configs": "1.0.0.1",
+        "discord": "1.0.0.0",
+        "drawing": "1.0.0.0",
+        "themes": "1.0.0.0",
+        "utils": "1.0.1.0",
+        "signal": "1.0.0.0",
+        "maid": "1.0.0.0"
+    },
+    "directories": [
+        "Evo V3",
+        "Evo V3/Configs",
+        "Evo V3/Crosshairs",
+        "Evo V3/Themes",
+        "Evo V3/Data",
+        "Evo V3/Data/Bloxburg Saves",
+        "Evo V3/Data/Images",
+        "Evo V3/Data/Systems",
+        "Evo V3/Data/Votekick Logs"
+    ],
+    "images": []
+}
