@@ -263,7 +263,7 @@ ui.main.loader.Visible = true
 
 local tweenservice = game:GetService("TweenService")
 
-local setup = loadstring(game:HttpGetAsync("https://projectevo.xyz/v3/modules/setup.lua", true))()
+local setup = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/modules/setup.lua", true))()
 local changelog, steps = setup:getloginfo()
 local incr = 0
 
@@ -1182,7 +1182,7 @@ local function serverhop()
         log[game.JobId] = tick()
         writefile("Evo V3/Data/Votekick Logs/Phantom Forces.json", client.services.httpservice:JSONEncode(log))
         if library.flags.executeonhop then
-            queueonteleport("repeat task.wait() until game:GetService(\"ContentProvider\").RequestQueueSize == 0\nloadstring(game:HttpGetAsync(\"https://projectevo.xyz/v3/premium.lua\", true))()")
+            queueonteleport("repeat task.wait() until game:GetService(\"ContentProvider\").RequestQueueSize == 0\nloadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/loader.lua\", true))()")
         end
         client.services.teleportservice:TeleportToPlaceInstance(game.PlaceId, valid[math.random(1, #valid)])
     else
@@ -7600,7 +7600,7 @@ local function solvepuzzle()
 		end
 	end
 	local res = httprequest({
-		Url = "https://projectevo.xyz/api/v1/utils/solvenumberlink",
+		Url = "", -- Link redacted, the repl.co version from the previous 2 versions of Evo still works tho :)
 		Method = "POST",
 		Headers = {
 			["Content-Type"] = "application/json"
