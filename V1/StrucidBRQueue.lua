@@ -14,7 +14,7 @@ Hint:Destroy()
 local queueonteleport = queue_on_teleport or queue_for_teleport or (syn and syn.queue_on_teleport)
 
 if queueonteleport then
-	queueonteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Loader.lua"))()]])
-    local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Library.lua", true))()
+	queueonteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Loader.lua"))()]])
+    local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Library.lua", true))()
     Lib.Notify("Project: Evolution will load when you join the Battle Royale")
 end
