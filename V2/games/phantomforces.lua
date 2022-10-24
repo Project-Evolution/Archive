@@ -155,8 +155,8 @@ local settings = {
 
 --[[ ==========  Variables  ========== ]]
 
-local cache = loadstring(game:HttpGet("https://projectevo.xyz/script/utils/libraryv3.lua"))()
-cache.esp = loadstring(game:HttpGet("https://projectevo.xyz/script/utils/espv3.lua"))()
+local cache = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V2/utils/libraryv3.lua"))()
+cache.esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V2/utils/espv3.lua"))()
 cache.misc = cache.system.new("Miscellaneous")
 
 local startTick = tick()
