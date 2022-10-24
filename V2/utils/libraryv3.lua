@@ -1,4 +1,4 @@
-local system = loadstring(game:HttpGetAsync("https://projectevo.xyz/script/utils/systems.lua"))()
+local system = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V2/utils/systems.lua"))()
 local tracer = system.new("Tracer")
 local discord = system.new("Discord")
 
