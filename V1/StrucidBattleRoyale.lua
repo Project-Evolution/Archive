@@ -89,7 +89,7 @@ local GunStatTable, Found, Rarities = {}, {}, {
 	Legendary = Color3.new(0.75, 0.75, 0)
 }
 
-local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/EspModule.lua", true))()
+local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/EspModule.lua", true))()
 
 -- Functions
 
@@ -210,7 +210,7 @@ end
 
 -- GUI
 
-local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Library.lua", true))()
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Library.lua", true))()
 Lib.Init("Strucid")
 
 local SilentAim = Lib.AddTab("Silent Aim")
@@ -524,7 +524,7 @@ end)
 local queueonteleport = queue_on_teleport or queue_for_teleport or (syn and syn.queue_on_teleport)
 
 if queueonteleport then
-	queueonteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Main/main/Loader.lua"))()]])
+	queueonteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V1/Loader.lua"))()]])
 end
 
 Lib.Notify("If you use this obviously, you may be banned. We take no responsibility for that")
