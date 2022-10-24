@@ -886,7 +886,7 @@ local function serverhop()
         log[game.JobId] = tick()
         writefile("Evo V3/Data/Votekick Logs/Phantom Forces.json", client.services.httpservice:JSONEncode(log))
         if library.flags.executeonhop then
-            queueonteleport("repeat task.wait() until game:GetService(\"ContentProvider\").RequestQueueSize == 0\nloadstring(game:HttpGetAsync(\"https://projectevo.xyz/v3/premium.lua\", true))()")
+            queueonteleport("repeat task.wait() until game:GetService(\"ContentProvider\").RequestQueueSize == 0\nloadstring(game:HttpGetAsync(\"https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/loader.lua\", true))()")
         end
         client.services.teleportservice:TeleportToPlaceInstance(game.PlaceId, valid[math.random(1, #valid)])
     else
