@@ -1,6 +1,8 @@
 # Archive
 A public repository for every previous version of the Project: Evolution series of script hubs
 
+You are, of course, free to use this however you like. However, if you skid it, chances are I don't like you :)
+
 # V1
 This was my first attempt at a 'proper' hub, it's written like shit cause I was really shit back then.
 
