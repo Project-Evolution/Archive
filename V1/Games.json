@@ -1,0 +1,105 @@
+{
+    "286090429": {
+        "Name": "Arsenal",
+        "Functions": {
+            "checkcaller": true,
+            "getgc": true,
+            "getinfo": true,
+            "getrawmetatable": true,
+            "islclosure": true,
+            "makereadonly": true,
+            "makewriteable": true,
+            "newcclosure": true,
+            "newdrawing": true
+        }
+    },
+    "3233893879": {
+        "Name": "Bad Business",
+        "Functions": {
+            "newcclosure": true,
+            "newdrawing": true,
+            "require": true
+        }
+    },
+    "606849621": {
+        "Name": "JailBreak",
+        "Functions": {
+            "checkcaller": true,
+            "fireclickdetector": true,
+            "getconstants": true,
+            "getgc": true,
+            "getnamecallmethod": true,
+            "getproto": true,
+            "getrawmetatable": true,
+            "getthreadidentity": true,
+            "getupvalue": true,
+            "getupvalues": true,
+            "islclosure": true,
+            "makereadonly": true,
+            "makewriteable": true,
+            "newcclosure": true,
+            "newdrawing": true,
+            "request": true,
+            "require": true,
+            "setconstant": true,
+            "setthreadidentity": true,
+            "setupvalue": true,
+            "traceback": true
+        }
+    },
+    "292439477": {
+        "Name": "Phantom Forces",
+        "Functions": {
+            "getgc": true,
+            "getinfo": true,
+            "getrawmetatable": true,
+            "getupvalue": true,
+            "islclosure": true,
+            "makereadonly": true,
+            "makewriteable": true,
+            "newcclosure": true,
+            "newdrawing": true,
+            "require": true
+        }
+    },
+    "2377868063": {
+        "Name": "Strucid",
+        "Functions": {
+            "getgc": true,
+            "getnamecallmethod": true,
+            "getrawmetatable": true,
+            "getrenv": true,
+            "getsenv": true,
+            "getupvalue": true,
+            "hookfunction": true,
+            "makereadonly": true,
+            "makewriteable": true,
+            "newcclosure": true,
+            "newdrawing": true,
+            "require": true,
+            "traceback": true
+        }
+    },
+    "2674164583": {
+        "Name": "Strucid Battle Royale",
+        "Functions": {
+            "getgc": true,
+            "getnamecallmethod": true,
+            "getrawmetatable": true,
+            "getrenv": true,
+            "getsenv": true,
+            "getupvalue": true,
+            "hookfunction": true,
+            "makereadonly": true,
+            "makewriteable": true,
+            "newcclosure": true,
+            "newdrawing": true,
+            "require": true,
+            "traceback": true
+        }
+    },
+    "2633045061": {
+        "Name": "Strucid BR Queue",
+        "Functions": {}
+    }
+}
