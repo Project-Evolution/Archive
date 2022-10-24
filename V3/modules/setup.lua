@@ -199,10 +199,10 @@ local cache = {
 }
 
 local links = { 
-    changelog = "https://projectevo.xyz/v3/changelog.json",
-    modules = "https://projectevo.xyz/v3/modules/",
-    images = "https://projectevo.xyz/v3/images/",
-    systems = "https://projectevo.xyz/v3/modules/systems/"
+    changelog = "https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/changelog.json",
+    modules = "https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/modules/",
+    images = "https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/images/",
+    systems = "https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/modules/systems/"
 }
 
 getgenv().evov3 = {
@@ -228,7 +228,7 @@ getgenv().evov3 = {
 	},
 }
 
-evov3.startup = isfile and isfile("Evo V3/Data/Systems/signal.lua") and evov3.imports:fetchsystem("signal") or loadstring(game:HttpGetAsync("https://projectevo.xyz/v3/modules/systems/signal.lua", true))().new()
+evov3.startup = isfile and isfile("Evo V3/Data/Systems/signal.lua") and evov3.imports:fetchsystem("signal") or loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Project-Evolution/Archive/main/V3/modules/systems/signal.lua", true))().new()
 
 local function checkdirectories(changelog)
 	for i = 1, #changelog.directories do
